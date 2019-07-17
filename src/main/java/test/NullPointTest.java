@@ -39,7 +39,8 @@ public class NullPointTest {
             list= new ArrayList<>();
             list.add(map.get(OK));
         }
-        return list == null ? Collections.emptyList() : list ;
+        return list;
+        //return list == null ? Collections.emptyList() : list ;
     }
 
     public static void main(String[] args) {

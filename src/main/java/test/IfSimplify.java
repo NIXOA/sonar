@@ -15,6 +15,9 @@ import java.util.Optional;
 public class IfSimplify {
 
 
+    private static final boolean IS_BUSY=true;
+    private static final boolean IS_FREE=false;
+
     /**
      * 获取当前日期的中文星期天数
      * @return
@@ -48,6 +51,42 @@ public class IfSimplify {
     }
 
 
+
+    private static void today() {
+        if (!IS_BUSY) {
+            if (!IS_FREE) {
+                System.out.println("stay at home ");
+            }else{
+                System.out.println("go to travel");
+            }
+        }else{
+            System.out.println("change time");
+        }
+
+    }
+
+
+    /**
+     * 卫语句(guard clauses)
+     * 就是把复杂的条件表达式拆分成多个条件表达式
+     */
+    private static void guardToday() {
+        // 单独检查报错分支
+        if (IS_BUSY) {
+            System.out.println("change time.");
+            return;
+        }
+        if (IS_FREE) {
+            System.out.println("go to travel.");
+            return;
+        }
+        // 关注真正的业务代码
+        System.out.println("stay at home");
+    }
+
+
+
+
     private String getCity( User user){
        if (user!=null){
            if (user.getAddress()!=null){
@@ -66,16 +105,8 @@ public class IfSimplify {
                 .orElseThrow(()->new RuntimeException("取值错误"));
     }
 
-
-
-
-
-
-
-
-
-
     public static void main(String[] args) {
+
     }
 
 }
