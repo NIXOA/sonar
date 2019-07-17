@@ -1,8 +1,8 @@
 package entity;
 
 /**
- * @Author Godzilla
- * @Date 2019/7/16 15:44
+ * @author qiaoxin
+ * @Date 2019/7/16
  */
 public class Address {
     private String province;

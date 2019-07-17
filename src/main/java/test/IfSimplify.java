@@ -9,8 +9,8 @@ import java.util.Map;
 import java.util.Optional;
 
 /**
- * @Author Godzilla
- * @Date 2019/7/16 15:00
+ * @author qiaoxin
+ * @Date 2019/7/16
  */
 public class IfSimplify {
 

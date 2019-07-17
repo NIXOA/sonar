@@ -2,8 +2,8 @@ package entity;
 
 /**
  * 用户实体类
- * @Author Godzilla
- * @Date 2019/7/16 14:11
+ * @author qiaoxin
+ * @Date 2019/7/16
  */
 public class User {
 

@@ -5,8 +5,8 @@ import entity.User;
 import java.util.*;
 
 /**
- * @Author Godzilla
- * @Date 2019/7/16 13:34
+ * @author qiaoxin
+ * @Date 2019/7/16
  */
 public class NullPointTest {
 

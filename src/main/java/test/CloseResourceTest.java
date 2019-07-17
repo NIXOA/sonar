@@ -4,17 +4,16 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 /**
- * @Author Godzilla
- * @Date 2019/7/17 15:33
+ * @author qiaoxin
+ * @Date 2019/7/17
  */
 public class CloseResourceTest {
-    private static final String FileName = "file.txt";
+    private static final String FILENAME = "file.txt";
 
-    public static void closeByFinally() throws IOException {
+    private static void closeByFinally() throws IOException {
         FileInputStream inputStream = null;
-
         try {
-            inputStream = new FileInputStream(FileName);
+            inputStream = new FileInputStream(FILENAME);
             char c1 = (char) inputStream.read();
             System.out.println("c1=" + c1);
         } catch (IOException e) {
@@ -33,7 +32,7 @@ public class CloseResourceTest {
      * 可以使用作为资源。
      */
     private static void closeByResource(){
-        try (FileInputStream inputStream = new FileInputStream(FileName)) {
+        try (FileInputStream inputStream = new FileInputStream(FILENAME)) {
             char c1 = (char) inputStream.read();
             System.out.println("c1=" + c1);
         } catch (IOException e) {

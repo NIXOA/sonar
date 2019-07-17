@@ -3,8 +3,8 @@ package test;
 import entity.User;
 
 /**
- * @Author Godzilla
- * @Date 2019/7/16 14:19
+ * @author qiaoxin
+ * @Date 2019/7/16
  */
 public class ObjectEqual {
     private static final Integer INT_128 = 128;

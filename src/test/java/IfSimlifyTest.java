@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @Author Godzilla
+ * @author qiaoxin
  * @Date 2019/7/16 15:41
  */
 public class IfSimlifyTest {
